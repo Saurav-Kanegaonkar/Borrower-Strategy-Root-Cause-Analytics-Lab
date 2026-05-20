@@ -1,0 +1,19 @@
+segment_id,segment,scenario,forecast_delinquency_rate,forecast_contact_rate,annualized_value,operating_cost
+REFI_HIGH_BAL_GRAD,"Graduate refinance, high balance",Control,0.095,0.1924,0,0
+REFI_HIGH_BAL_GRAD,"Graduate refinance, high balance",Focused outreach,0.0911,0.1753,318657,23162
+REFI_HIGH_BAL_GRAD,"Graduate refinance, high balance",Full playbook,0.089,0.1614,490241,42112
+REFI_MED_BAL_PRO,"Professional refinance, medium balance",Control,0.062,0.1511,0,0
+REFI_MED_BAL_PRO,"Professional refinance, medium balance",Focused outreach,0.0581,0.1341,255675,23944
+REFI_MED_BAL_PRO,"Professional refinance, medium balance",Full playbook,0.056,0.1201,393347,43534
+INSCHOOL_PARENT,In-school parent borrower,Control,0.1129,0.2159,0,0
+INSCHOOL_PARENT,In-school parent borrower,Focused outreach,0.109,0.1989,83104,22518
+INSCHOOL_PARENT,In-school parent borrower,Full playbook,0.1069,0.1849,127852,40942
+INSCHOOL_STUDENT,In-school student borrower,Control,0.1318,0.2394,0,0
+INSCHOOL_STUDENT,In-school student borrower,Focused outreach,0.1201,0.2273,313243,34663
+INSCHOOL_STUDENT,In-school student borrower,Full playbook,0.1138,0.2174,481912,63024
+PL_DEBT_CONSOLIDATION,"Personal loan, debt consolidation",Control,0.1552,0.2684,0,0
+PL_DEBT_CONSOLIDATION,"Personal loan, debt consolidation",Focused outreach,0.1435,0.2563,99844,32178
+PL_DEBT_CONSOLIDATION,"Personal loan, debt consolidation",Full playbook,0.1372,0.2464,153607,58506
+PL_LIFE_EVENT,"Personal loan, life event",Control,0.1281,0.236,0,0
+PL_LIFE_EVENT,"Personal loan, life event",Focused outreach,0.1164,0.2239,44488,31634
+PL_LIFE_EVENT,"Personal loan, life event",Full playbook,0.1101,0.214,68443,57516

@@ -2,6 +2,6 @@
 
 - Project: Borrower Strategy Root Cause Analytics Lab
 - GitHub: https://github.com/Saurav-Kanegaonkar/Borrower-Strategy-Root-Cause-Analytics-Lab
-- Status: complete
+- Status: upgraded through the Portfolio Artifact Upgrade Workflow
 - Resume Link Ready: Yes
-- Last update: Created to locked pipeline standards with multiple data sources, analysis artifacts, scripts, screenshot, and distinct artifact framing.
+- Last update: Rebuilt into a multi-surface borrower strategy analytics workbench with public complaint themes, synthetic protected portfolio data, explainable root-cause scoring, scenario forecasting, data-quality checks, SQL evidence, screenshots, and interview-ready README documentation.

@@ -1,0 +1,6 @@
+intervention_id,intervention,target_root_cause,expected_delinquency_lift,expected_contact_reduction,effort_score,owner
+INT001,Pre-delinquency repayment-fit outreach,Repayment plan mismatch,0.018,0.022,3,Operations
+INT002,Autopay retry and enrollment experiment,Autopay and payment friction,0.011,0.016,2,Product
+INT003,Servicing clarity rewrite for top complaint flows,Servicing clarity gap,0.006,0.031,2,Customer
+INT004,Credit policy edge-case review,Credit-policy edge case,0.009,0.008,4,Credit Strategy
+INT005,Metric definition lock and reconciliation automation,Metric definition drift,0.003,0.012,1,Business Analytics

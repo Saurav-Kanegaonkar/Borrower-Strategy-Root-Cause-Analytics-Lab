@@ -1,0 +1,7 @@
+segment_id,segment,product,borrowers,avg_balance,annualized_balance,base_delinquency,autopay_rate,income_pressure_index,channel,owner
+REFI_HIGH_BAL_GRAD,"Graduate refinance, high balance",Student loan refinance,28400,82200,2334480000,0.071,0.72,0.41,Direct web,Product
+REFI_MED_BAL_PRO,"Professional refinance, medium balance",Student loan refinance,36300,51600,1873080000,0.044,0.81,0.27,Partner marketplace,Business Analytics
+INSCHOOL_PARENT,In-school parent borrower,Private student loan,21900,27800,608820000,0.083,0.61,0.49,School referral,Operations
+INSCHOOL_STUDENT,In-school student borrower,Private student loan,41800,18300,764940000,0.096,0.55,0.58,Direct web,Product
+PL_DEBT_CONSOLIDATION,"Personal loan, debt consolidation",Personal loan,16700,14600,243820000,0.118,0.64,0.66,Direct web,Credit Strategy
+PL_LIFE_EVENT,"Personal loan, life event",Personal loan,11200,9700,108640000,0.092,0.58,0.62,Partner marketplace,Operations

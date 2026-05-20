@@ -1,15 +1,16 @@
 # Executive Findings
 
-## What I analyzed
+## What I Analyzed
 
-I joined 5,040 daily metric rows, 760 source events, and 220 action candidates for student lending borrower strategy analytics.
+I combined a public CFPB student-loan complaint sample with a synthetic borrower portfolio, daily performance metrics, intervention assumptions, and data-quality checks. The goal was to turn borrower strategy signals into a decision artifact for product, operations, and leadership.
 
 ## Findings
 
-- The highest-priority borrower cohort is BOR004 with a priority score of 110.19.
-- The top queue combines 53.4 average risk with 79.6 quality score and $987,559 estimated impact.
-- The strongest use case is turning repeated stakeholder questions into a ranked operating digest.
+- The highest-priority cohort is Personal loan, debt consolidation, with a 15.5% modeled delinquency rate and 26.8% contact demand.
+- The strongest root-cause signal is Repayment plan mismatch, linked to Borrower support demand in the public complaint taxonomy.
+- The modeled full-playbook scenario creates $5.9B of portfolio context and $1.4M of ranked net-value opportunity.
+- Data trust is 94.3%, with the largest watch item tied to source timing and taxonomy mapping.
 
 ## Recommendation
 
-Prioritize the top queue before scaling more dashboards. The project should help leaders decide which borrower cohort risks need action, validation, or monitoring.
+Start with Servicing clarity rewrite for top complaint flows for Graduate refinance, high balance. Run it as a 30-day operating pilot with named owners, weekly SQL checks, and a holdout readout before scaling.

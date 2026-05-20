@@ -6,49 +6,113 @@
   <title>Borrower Strategy Root Cause Analytics Lab</title>
   <link rel="stylesheet" href="src/styles.css">
 </head>
-<body style="--accent:#7c3aed;--bg:#f7f2ff">
-  <main class="shell">
-    <header class="hero">
+<body>
+  <main class="app-shell">
+    <header class="topbar">
       <div>
-        <p class="eyebrow">Experiment Lab / student lending borrower strategy analytics</p>
-        <h1>Borrower Strategy Root Cause Analytics Lab</h1>
+        <p class="eyebrow">Borrower strategy analytics</p>
+        <h1>Root-cause workbench for lending performance decisions</h1>
       </div>
-      <aside>
-        <b>Purpose</b>
-        <span>Turn messy borrower cohort-level signals into a ranked operating artifact with recommendations a stakeholder can act on.</span>
-      </aside>
+      <section class="decision-card" aria-label="Top recommendation">
+        <span>Next operating move</span>
+        <strong id="topRecommendation">Loading</strong>
+        <p id="topSegment">Loading</p>
+      </section>
     </header>
-    <section class="metrics">
-      <article><span>Modeled rows</span><strong>6.0K+</strong><em>source-style</em></article>
-      <article><span>Ranked queue</span><strong>25</strong><em>borrower cohorts</em></article>
-      <article><span>Action pool</span><strong>220</strong><em>candidates</em></article>
-      <article><span>Review time</span><strong>-6 hrs</strong><em>weekly</em></article>
+
+    <section class="metric-strip" id="metricStrip" aria-label="Portfolio metrics"></section>
+
+    <nav class="surface-tabs" aria-label="Workbench surfaces">
+      <button class="active" type="button" data-surface="cockpit">Cockpit</button>
+      <button type="button" data-surface="rootCause">Root Cause</button>
+      <button type="button" data-surface="forecast">Forecast</button>
+      <button type="button" data-surface="trust">Data Trust</button>
+    </nav>
+
+    <section class="surface active" id="cockpit" aria-label="Executive cockpit">
+      <div class="layout-two">
+        <article class="panel">
+          <div class="panel-heading">
+            <p class="eyebrow">Priority queue</p>
+            <h2>Where borrower outcomes need action</h2>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Segment</th>
+                  <th>Root cause</th>
+                  <th>Delinq.</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody id="priorityRows"></tbody>
+            </table>
+          </div>
+        </article>
+        <article class="panel">
+          <div class="panel-heading">
+            <p class="eyebrow">Public signal</p>
+            <h2>Complaint themes informing the diagnosis</h2>
+          </div>
+          <div id="themeBars" class="bar-list"></div>
+        </article>
+      </div>
+      <section class="action-grid" id="actionCards" aria-label="Recommended action cards"></section>
     </section>
-    <section class="main-grid">
-      <article class="panel lead">
-        <p class="eyebrow">Hypothesis</p>
-        <h2>Priority queue</h2>
-        <table>
-          <thead><tr><th>borrower cohort</th><th>Signal</th><th>Risk</th><th>Next move</th></tr></thead>
-          <tbody>
-            <tr><td>Segment A</td><td>Power risk</td><td>High</td><td>Escalate with source check</td></tr>
-            <tr><td>Segment B</td><td>Experiment readout</td><td>Medium</td><td>Test with clear owner</td></tr>
-            <tr><td>Segment C</td><td>Quality gap</td><td>Watch</td><td>Document metric definition</td></tr>
-          </tbody>
-        </table>
-      </article>
-      <article class="panel narrative">
-        <p class="eyebrow">What the analysis says</p>
-        <h2>Recommendations over screenshots</h2>
-        <p>The artifact is built around decisions, not dashboard decoration: each source table feeds a ranked queue, and each queue item resolves into a recommendation.</p>
-        <p>The strongest opportunities appear where performance upside, measurement quality, and operating readiness overlap.</p>
+
+    <section class="surface" id="rootCause" aria-label="Root cause analysis">
+      <div class="layout-two root-grid">
+        <article class="panel">
+          <div class="panel-heading">
+            <p class="eyebrow">Diagnostic model</p>
+            <h2>Signals behind the top cohort</h2>
+          </div>
+          <div id="diagnosticStack" class="diagnostic-stack"></div>
+        </article>
+        <article class="panel">
+          <div class="panel-heading">
+            <p class="eyebrow">Operating brief</p>
+            <h2>Translate ambiguity into action</h2>
+          </div>
+          <div id="briefCard" class="brief-card"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="surface" id="forecast" aria-label="Scenario forecast">
+      <article class="panel">
+        <div class="panel-heading">
+          <p class="eyebrow">Scenario lab</p>
+          <h2>Control, focused outreach, and full playbook</h2>
+        </div>
+        <div class="scenario-grid" id="scenarioGrid"></div>
       </article>
     </section>
-    <section class="recommendations">
-      <article><b>01</b><h3>Validate</h3><p>Confirm source definitions before scaling the insight into recurring reporting.</p></article>
-      <article><b>02</b><h3>Prioritize</h3><p>Move the highest-value borrower cohort segment into the next operating review.</p></article>
-      <article><b>03</b><h3>Automate</h3><p>Convert the queue into a stakeholder-ready digest for repeated decisions.</p></article>
+
+    <section class="surface" id="trust" aria-label="Data trust surface">
+      <div class="layout-two">
+        <article class="panel">
+          <div class="panel-heading">
+            <p class="eyebrow">Metric confidence</p>
+            <h2>Checks before recommendations scale</h2>
+          </div>
+          <div id="qualityChecks" class="quality-list"></div>
+        </article>
+        <article class="panel sql-panel">
+          <div class="panel-heading">
+            <p class="eyebrow">SQL evidence</p>
+            <h2>Questions the review can answer</h2>
+          </div>
+          <ul>
+            <li>Which cohort has the highest delinquency and contact demand?</li>
+            <li>Which data source blocks recommendation confidence?</li>
+            <li>Which scenario creates the best net value after effort?</li>
+          </ul>
+        </article>
+      </div>
     </section>
   </main>
+  <script type="module" src="src/app.js"></script>
 </body>
 </html>

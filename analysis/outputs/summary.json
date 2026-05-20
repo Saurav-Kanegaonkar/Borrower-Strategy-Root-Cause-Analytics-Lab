@@ -1,0 +1,468 @@
+{
+  "metrics": [
+    {
+      "label": "Modeled borrowers",
+      "value": "156,300",
+      "note": "six strategy cohorts"
+    },
+    {
+      "label": "Avg delinquency",
+      "value": "11.4%",
+      "note": "120-day modeled window"
+    },
+    {
+      "label": "Autopay coverage",
+      "value": "66.1%",
+      "note": "portfolio weighted"
+    },
+    {
+      "label": "Net scenario value",
+      "value": "$1.4M",
+      "note": "full playbook model"
+    }
+  ],
+  "portfolio": {
+    "borrowers": 156300,
+    "annualized_balance": 5933780000,
+    "complaint_rows_profiled": 29244,
+    "data_trust_score": 0.943,
+    "top_recommendation": "Servicing clarity rewrite for top complaint flows",
+    "top_segment": "Graduate refinance, high balance"
+  },
+  "themeRollup": [
+    {
+      "issue": "Dealing with your lender or servicer",
+      "complaints": 16530,
+      "share": 0.5652,
+      "borrower_signal": "Servicing clarity"
+    },
+    {
+      "issue": "Struggling to repay your loan",
+      "complaints": 5777,
+      "share": 0.1975,
+      "borrower_signal": "Repayment friction"
+    },
+    {
+      "issue": "Incorrect information on your report",
+      "complaints": 3409,
+      "share": 0.1166,
+      "borrower_signal": "Credit reporting risk"
+    },
+    {
+      "issue": "Improper use of your report",
+      "complaints": 1500,
+      "share": 0.0513,
+      "borrower_signal": "Credit reporting risk"
+    },
+    {
+      "issue": "Problem with a company's investigation into an existing problem",
+      "complaints": 1001,
+      "share": 0.0342,
+      "borrower_signal": "Borrower support demand"
+    },
+    {
+      "issue": "Getting a loan",
+      "complaints": 501,
+      "share": 0.0171,
+      "borrower_signal": "Borrower support demand"
+    },
+    {
+      "issue": "Credit monitoring or identity theft protection services",
+      "complaints": 185,
+      "share": 0.0063,
+      "borrower_signal": "Credit reporting risk"
+    },
+    {
+      "issue": "Issue with income share agreement",
+      "complaints": 115,
+      "share": 0.0039,
+      "borrower_signal": "Borrower support demand"
+    }
+  ],
+  "rootCauseQueue": [
+    {
+      "segment_id": "PL_DEBT_CONSOLIDATION",
+      "segment": "Personal loan, debt consolidation",
+      "product": "Personal loan",
+      "primary_root_cause": "Repayment plan mismatch",
+      "public_theme_signal": "Borrower support demand",
+      "avg_delinquency_rate": 0.1552,
+      "avg_contact_rate": 0.2684,
+      "avg_application_completion_rate": 0.7896,
+      "avg_first_resolution_rate": 0.7148,
+      "autopay_gap": 0.36,
+      "confidence": 0.8608,
+      "priority_score": 133.1,
+      "expected_loss_risk": 1324786,
+      "recommended_action": "Pre-delinquency repayment-fit outreach",
+      "action_owner": "Operations",
+      "modeled_net_value": 95101
+    },
+    {
+      "segment_id": "INSCHOOL_STUDENT",
+      "segment": "In-school student borrower",
+      "product": "Private student loan",
+      "primary_root_cause": "Repayment plan mismatch",
+      "public_theme_signal": "Credit reporting risk",
+      "avg_delinquency_rate": 0.1318,
+      "avg_contact_rate": 0.2394,
+      "avg_application_completion_rate": 0.7889,
+      "avg_first_resolution_rate": 0.7278,
+      "autopay_gap": 0.45,
+      "confidence": 0.862,
+      "priority_score": 117.6,
+      "expected_loss_risk": 3529271,
+      "recommended_action": "Pre-delinquency repayment-fit outreach",
+      "action_owner": "Operations",
+      "modeled_net_value": 418888
+    },
+    {
+      "segment_id": "PL_LIFE_EVENT",
+      "segment": "Personal loan, life event",
+      "product": "Personal loan",
+      "primary_root_cause": "Repayment plan mismatch",
+      "public_theme_signal": "Borrower support demand",
+      "avg_delinquency_rate": 0.1281,
+      "avg_contact_rate": 0.236,
+      "avg_application_completion_rate": 0.7876,
+      "avg_first_resolution_rate": 0.728,
+      "autopay_gap": 0.42,
+      "confidence": 0.8628,
+      "priority_score": 116.9,
+      "expected_loss_risk": 486983,
+      "recommended_action": "Pre-delinquency repayment-fit outreach",
+      "action_owner": "Operations",
+      "modeled_net_value": 10927
+    },
+    {
+      "segment_id": "REFI_HIGH_BAL_GRAD",
+      "segment": "Graduate refinance, high balance",
+      "product": "Student loan refinance",
+      "primary_root_cause": "Servicing clarity gap",
+      "public_theme_signal": "Servicing clarity",
+      "avg_delinquency_rate": 0.095,
+      "avg_contact_rate": 0.1924,
+      "avg_application_completion_rate": 0.8119,
+      "avg_first_resolution_rate": 0.7574,
+      "autopay_gap": 0.28,
+      "confidence": 0.8627,
+      "priority_score": 108.5,
+      "expected_loss_risk": 7758742,
+      "recommended_action": "Servicing clarity rewrite for top complaint flows",
+      "action_owner": "Customer",
+      "modeled_net_value": 448129
+    },
+    {
+      "segment_id": "INSCHOOL_PARENT",
+      "segment": "In-school parent borrower",
+      "product": "Private student loan",
+      "primary_root_cause": "Servicing clarity gap",
+      "public_theme_signal": "Credit reporting risk",
+      "avg_delinquency_rate": 0.1129,
+      "avg_contact_rate": 0.2159,
+      "avg_application_completion_rate": 0.7989,
+      "avg_first_resolution_rate": 0.7423,
+      "autopay_gap": 0.39,
+      "confidence": 0.8617,
+      "priority_score": 102.1,
+      "expected_loss_risk": 2405397,
+      "recommended_action": "Servicing clarity rewrite for top complaint flows",
+      "action_owner": "Customer",
+      "modeled_net_value": 86910
+    },
+    {
+      "segment_id": "REFI_MED_BAL_PRO",
+      "segment": "Professional refinance, medium balance",
+      "product": "Student loan refinance",
+      "primary_root_cause": "Servicing clarity gap",
+      "public_theme_signal": "Repayment friction",
+      "avg_delinquency_rate": 0.062,
+      "avg_contact_rate": 0.1511,
+      "avg_application_completion_rate": 0.8305,
+      "avg_first_resolution_rate": 0.7802,
+      "autopay_gap": 0.19,
+      "confidence": 0.8622,
+      "priority_score": 68.1,
+      "expected_loss_risk": 4064693,
+      "recommended_action": "Servicing clarity rewrite for top complaint flows",
+      "action_owner": "Customer",
+      "modeled_net_value": 349813
+    }
+  ],
+  "scenarioForecast": [
+    {
+      "segment_id": "REFI_HIGH_BAL_GRAD",
+      "segment": "Graduate refinance, high balance",
+      "scenario": "Control",
+      "forecast_delinquency_rate": 0.095,
+      "forecast_contact_rate": 0.1924,
+      "annualized_value": 0,
+      "operating_cost": 0
+    },
+    {
+      "segment_id": "REFI_HIGH_BAL_GRAD",
+      "segment": "Graduate refinance, high balance",
+      "scenario": "Focused outreach",
+      "forecast_delinquency_rate": 0.0911,
+      "forecast_contact_rate": 0.1753,
+      "annualized_value": 318657,
+      "operating_cost": 23162
+    },
+    {
+      "segment_id": "REFI_HIGH_BAL_GRAD",
+      "segment": "Graduate refinance, high balance",
+      "scenario": "Full playbook",
+      "forecast_delinquency_rate": 0.089,
+      "forecast_contact_rate": 0.1614,
+      "annualized_value": 490241,
+      "operating_cost": 42112
+    },
+    {
+      "segment_id": "REFI_MED_BAL_PRO",
+      "segment": "Professional refinance, medium balance",
+      "scenario": "Control",
+      "forecast_delinquency_rate": 0.062,
+      "forecast_contact_rate": 0.1511,
+      "annualized_value": 0,
+      "operating_cost": 0
+    },
+    {
+      "segment_id": "REFI_MED_BAL_PRO",
+      "segment": "Professional refinance, medium balance",
+      "scenario": "Focused outreach",
+      "forecast_delinquency_rate": 0.0581,
+      "forecast_contact_rate": 0.1341,
+      "annualized_value": 255675,
+      "operating_cost": 23944
+    },
+    {
+      "segment_id": "REFI_MED_BAL_PRO",
+      "segment": "Professional refinance, medium balance",
+      "scenario": "Full playbook",
+      "forecast_delinquency_rate": 0.056,
+      "forecast_contact_rate": 0.1201,
+      "annualized_value": 393347,
+      "operating_cost": 43534
+    },
+    {
+      "segment_id": "INSCHOOL_PARENT",
+      "segment": "In-school parent borrower",
+      "scenario": "Control",
+      "forecast_delinquency_rate": 0.1129,
+      "forecast_contact_rate": 0.2159,
+      "annualized_value": 0,
+      "operating_cost": 0
+    },
+    {
+      "segment_id": "INSCHOOL_PARENT",
+      "segment": "In-school parent borrower",
+      "scenario": "Focused outreach",
+      "forecast_delinquency_rate": 0.109,
+      "forecast_contact_rate": 0.1989,
+      "annualized_value": 83104,
+      "operating_cost": 22518
+    },
+    {
+      "segment_id": "INSCHOOL_PARENT",
+      "segment": "In-school parent borrower",
+      "scenario": "Full playbook",
+      "forecast_delinquency_rate": 0.1069,
+      "forecast_contact_rate": 0.1849,
+      "annualized_value": 127852,
+      "operating_cost": 40942
+    },
+    {
+      "segment_id": "INSCHOOL_STUDENT",
+      "segment": "In-school student borrower",
+      "scenario": "Control",
+      "forecast_delinquency_rate": 0.1318,
+      "forecast_contact_rate": 0.2394,
+      "annualized_value": 0,
+      "operating_cost": 0
+    },
+    {
+      "segment_id": "INSCHOOL_STUDENT",
+      "segment": "In-school student borrower",
+      "scenario": "Focused outreach",
+      "forecast_delinquency_rate": 0.1201,
+      "forecast_contact_rate": 0.2273,
+      "annualized_value": 313243,
+      "operating_cost": 34663
+    },
+    {
+      "segment_id": "INSCHOOL_STUDENT",
+      "segment": "In-school student borrower",
+      "scenario": "Full playbook",
+      "forecast_delinquency_rate": 0.1138,
+      "forecast_contact_rate": 0.2174,
+      "annualized_value": 481912,
+      "operating_cost": 63024
+    },
+    {
+      "segment_id": "PL_DEBT_CONSOLIDATION",
+      "segment": "Personal loan, debt consolidation",
+      "scenario": "Control",
+      "forecast_delinquency_rate": 0.1552,
+      "forecast_contact_rate": 0.2684,
+      "annualized_value": 0,
+      "operating_cost": 0
+    },
+    {
+      "segment_id": "PL_DEBT_CONSOLIDATION",
+      "segment": "Personal loan, debt consolidation",
+      "scenario": "Focused outreach",
+      "forecast_delinquency_rate": 0.1435,
+      "forecast_contact_rate": 0.2563,
+      "annualized_value": 99844,
+      "operating_cost": 32178
+    },
+    {
+      "segment_id": "PL_DEBT_CONSOLIDATION",
+      "segment": "Personal loan, debt consolidation",
+      "scenario": "Full playbook",
+      "forecast_delinquency_rate": 0.1372,
+      "forecast_contact_rate": 0.2464,
+      "annualized_value": 153607,
+      "operating_cost": 58506
+    },
+    {
+      "segment_id": "PL_LIFE_EVENT",
+      "segment": "Personal loan, life event",
+      "scenario": "Control",
+      "forecast_delinquency_rate": 0.1281,
+      "forecast_contact_rate": 0.236,
+      "annualized_value": 0,
+      "operating_cost": 0
+    },
+    {
+      "segment_id": "PL_LIFE_EVENT",
+      "segment": "Personal loan, life event",
+      "scenario": "Focused outreach",
+      "forecast_delinquency_rate": 0.1164,
+      "forecast_contact_rate": 0.2239,
+      "annualized_value": 44488,
+      "operating_cost": 31634
+    },
+    {
+      "segment_id": "PL_LIFE_EVENT",
+      "segment": "Personal loan, life event",
+      "scenario": "Full playbook",
+      "forecast_delinquency_rate": 0.1101,
+      "forecast_contact_rate": 0.214,
+      "annualized_value": 68443,
+      "operating_cost": 57516
+    }
+  ],
+  "actionPlan": [
+    {
+      "rank": 1,
+      "segment_id": "REFI_HIGH_BAL_GRAD",
+      "segment": "Graduate refinance, high balance",
+      "recommendation": "Servicing clarity rewrite for top complaint flows",
+      "decision_reason": "Servicing clarity gap is driving 9.5 percent delinquency and 19.2 percent contact demand.",
+      "owner": "Customer",
+      "confidence": 0.8627,
+      "modeled_net_value": 448129,
+      "first_30_days": "Rewrite two highest-volume help flows, QA response macros, track avoidable repeat contacts."
+    },
+    {
+      "rank": 2,
+      "segment_id": "INSCHOOL_STUDENT",
+      "segment": "In-school student borrower",
+      "recommendation": "Pre-delinquency repayment-fit outreach",
+      "decision_reason": "Repayment plan mismatch is driving 13.2 percent delinquency and 23.9 percent contact demand.",
+      "owner": "Operations",
+      "confidence": 0.862,
+      "modeled_net_value": 418888,
+      "first_30_days": "Flag borrowers 21 days before risk threshold, route plan-fit script, measure cure lift weekly."
+    },
+    {
+      "rank": 3,
+      "segment_id": "REFI_MED_BAL_PRO",
+      "segment": "Professional refinance, medium balance",
+      "recommendation": "Servicing clarity rewrite for top complaint flows",
+      "decision_reason": "Servicing clarity gap is driving 6.2 percent delinquency and 15.1 percent contact demand.",
+      "owner": "Customer",
+      "confidence": 0.8622,
+      "modeled_net_value": 349813,
+      "first_30_days": "Rewrite two highest-volume help flows, QA response macros, track avoidable repeat contacts."
+    },
+    {
+      "rank": 4,
+      "segment_id": "PL_DEBT_CONSOLIDATION",
+      "segment": "Personal loan, debt consolidation",
+      "recommendation": "Pre-delinquency repayment-fit outreach",
+      "decision_reason": "Repayment plan mismatch is driving 15.5 percent delinquency and 26.8 percent contact demand.",
+      "owner": "Operations",
+      "confidence": 0.8608,
+      "modeled_net_value": 95101,
+      "first_30_days": "Flag borrowers 21 days before risk threshold, route plan-fit script, measure cure lift weekly."
+    },
+    {
+      "rank": 5,
+      "segment_id": "INSCHOOL_PARENT",
+      "segment": "In-school parent borrower",
+      "recommendation": "Servicing clarity rewrite for top complaint flows",
+      "decision_reason": "Servicing clarity gap is driving 11.3 percent delinquency and 21.6 percent contact demand.",
+      "owner": "Customer",
+      "confidence": 0.8617,
+      "modeled_net_value": 86910,
+      "first_30_days": "Rewrite two highest-volume help flows, QA response macros, track avoidable repeat contacts."
+    },
+    {
+      "rank": 6,
+      "segment_id": "PL_LIFE_EVENT",
+      "segment": "Personal loan, life event",
+      "recommendation": "Pre-delinquency repayment-fit outreach",
+      "decision_reason": "Repayment plan mismatch is driving 12.8 percent delinquency and 23.6 percent contact demand.",
+      "owner": "Operations",
+      "confidence": 0.8628,
+      "modeled_net_value": 10927,
+      "first_30_days": "Flag borrowers 21 days before risk threshold, route plan-fit script, measure cure lift weekly."
+    }
+  ],
+  "qualityChecks": [
+    {
+      "check_id": "DQ001",
+      "check_name": "Delinquency denominator reconciles to servicing extract",
+      "dataset": "daily_borrower_metrics",
+      "confidence": 0.982,
+      "status": "Pass"
+    },
+    {
+      "check_id": "DQ002",
+      "check_name": "Application funnel event grain matches borrower application id",
+      "dataset": "application_events",
+      "confidence": 0.941,
+      "status": "Watch"
+    },
+    {
+      "check_id": "DQ003",
+      "check_name": "Complaint issue taxonomy mapped to borrower support themes",
+      "dataset": "public_complaint_themes",
+      "confidence": 0.915,
+      "status": "Watch"
+    },
+    {
+      "check_id": "DQ004",
+      "check_name": "Autopay enrollment feed lands before weekly review cutoff",
+      "dataset": "payments_feed",
+      "confidence": 0.887,
+      "status": "Fix"
+    },
+    {
+      "check_id": "DQ005",
+      "check_name": "Scenario assumptions have named owner and date",
+      "dataset": "scenario_forecast",
+      "confidence": 0.971,
+      "status": "Pass"
+    },
+    {
+      "check_id": "DQ006",
+      "check_name": "Segment ownership is complete for top action queue",
+      "dataset": "cohort_action_plan",
+      "confidence": 0.963,
+      "status": "Pass"
+    }
+  ]
+}

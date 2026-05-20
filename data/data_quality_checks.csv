@@ -1,0 +1,7 @@
+check_id,check_name,dataset,confidence,status
+DQ001,Delinquency denominator reconciles to servicing extract,daily_borrower_metrics,0.982,Pass
+DQ002,Application funnel event grain matches borrower application id,application_events,0.941,Watch
+DQ003,Complaint issue taxonomy mapped to borrower support themes,public_complaint_themes,0.915,Watch
+DQ004,Autopay enrollment feed lands before weekly review cutoff,payments_feed,0.887,Fix
+DQ005,Scenario assumptions have named owner and date,scenario_forecast,0.971,Pass
+DQ006,Segment ownership is complete for top action queue,cohort_action_plan,0.963,Pass
